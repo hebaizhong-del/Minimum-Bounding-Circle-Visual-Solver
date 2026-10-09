@@ -1,10 +1,26 @@
 # Minimum Bounding Circle Visual Solver (CableOptimizer)
 
+[![Live Web App](https://img.shields.io/badge/Live_Web_App-remix--studio-4285F4?logo=google-cloud&logoColor=white)](https://remix-studio-8856-789804289393.us-west1.run.app)
+[![GitHub Release](https://img.shields.io/github/v/release/hebaizhong-del/Minimum-Bounding-Circle-Visual-Solver?color=success&logo=github&label=Release)](https://github.com/hebaizhong-del/Minimum-Bounding-Circle-Visual-Solver/releases)
+[![Download Windows App](https://img.shields.io/badge/Download-Windows_.exe-0078D6?logo=windows&logoColor=white)](https://github.com/hebaizhong-del/Minimum-Bounding-Circle-Visual-Solver/releases/latest)
 [![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tauri](https://img.shields.io/badge/Tauri-v2-24C8DB?logo=tauri&logoColor=white)](https://tauri.app/)
 [![Rust](https://img.shields.io/badge/Rust-2021_Edition-dea584?logo=rust&logoColor=white)](https://www.rust-lang.org/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES2022-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+> ### 🌟 Official Deployments & Downloads
+> 
+> - 🌐 **Live Web Application (Browser Instant Access)**:  
+>   👉 **[https://remix-studio-8856-789804289393.us-west1.run.app](https://remix-studio-8856-789804289393.us-west1.run.app)**  
+>   *Instant access in any modern browser on desktop or mobile — zero installation required.*
+> 
+> - 🖥️ **Standalone Desktop App (Windows .exe)**:  
+>   👉 **[Download CableOptimizer v1.0.0 for Windows (.exe)](https://github.com/hebaizhong-del/Minimum-Bounding-Circle-Visual-Solver/releases/tag/v1.0.0)**  
+>   *Portable single-file executable (~15 MB) built with Tauri v2. Offline execution, zero runtime dependencies.*  
+>   🔗 All release packages: **[GitHub Releases Page](https://github.com/hebaizhong-del/Minimum-Bounding-Circle-Visual-Solver/releases)**
+
+---
 
 An interactive, high-performance visual optimizer and solver for the **Minimum Bounding / Enclosing Circle Packing Problem**. Designed for cable core layout design, cylindrical container packing, cross-sectional geometry analysis, and geometric optimization.
 
@@ -105,7 +121,11 @@ cable-design-app/
 
 ## 💻 Getting Started
 
-### Prerequisites
+### 🌐 Direct Online Access (No Installation)
+Try the fully featured visual solver directly in your web browser:  
+👉 **[Open Live Web App](https://remix-studio-8856-789804289393.us-west1.run.app)** (`https://remix-studio-8856-789804289393.us-west1.run.app`)
+
+### Prerequisites (For Local Development)
 - [Node.js](https://nodejs.org/) (version 18+ recommended)
 - `npm` or `pnpm` / `yarn`
 - *(Optional for desktop builds)* [Rust](https://www.rust-lang.org/) stable toolchain
@@ -134,6 +154,13 @@ npm run build
 ---
 
 ## 🖥️ Desktop Application (Tauri v2)
+
+### 📥 Download Pre-built Windows App (Ready to Run)
+The standalone Windows desktop binary is officially released on GitHub!
+- 🔗 **Release Page**: [CableOptimizer Releases (GitHub)](https://github.com/hebaizhong-del/Minimum-Bounding-Circle-Visual-Solver/releases)
+- 💾 **Direct Release Tag**: [CableOptimizer v1.0.0](https://github.com/hebaizhong-del/Minimum-Bounding-Circle-Visual-Solver/releases/tag/v1.0.0)
+- 🪟 **Executable**: `CableOptimizer.exe` (Standalone portable binary, ~15 MB)
+- ⚡ **Features**: Fast startup (<50ms), native offline execution, low memory footprint (~30 MB RAM), bundled WebView2 rendering.
 
 ### Local Desktop Development
 To test the desktop app locally:
