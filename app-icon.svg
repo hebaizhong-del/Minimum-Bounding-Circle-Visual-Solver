@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="coreGrad1" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fb923c" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </radialGradient>
+    <radialGradient id="coreGrad2" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fb923c" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </radialGradient>
+    <radialGradient id="coreGrad3" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fb923c" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Enclosing bounding circle background -->
+  <circle cx="256" cy="256" r="240" fill="#ffffff" stroke="#2563eb" stroke-width="12" stroke-dasharray="16 10" opacity="0.9" />
+  
+  <!-- Three-core arrangement -->
+  <g filter="url(#shadow)">
+    <!-- Top circle -->
+    <circle cx="256" cy="134.5" r="106" fill="url(#coreGrad1)" stroke="#c2410c" stroke-width="4" />
+    <!-- Bottom left circle -->
+    <circle cx="150" cy="318" r="106" fill="url(#coreGrad2)" stroke="#c2410c" stroke-width="4" />
+    <!-- Bottom right circle -->
+    <circle cx="362" cy="318" r="106" fill="url(#coreGrad3)" stroke="#c2410c" stroke-width="4" />
+  </g>
+
+  <!-- Center highlight details -->
+  <circle cx="256" cy="134.5" r="14" fill="#ffffff" opacity="0.4" />
+  <circle cx="150" cy="318" r="14" fill="#ffffff" opacity="0.4" />
+  <circle cx="362" cy="318" r="14" fill="#ffffff" opacity="0.4" />
+</svg>

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schema.tauri.app/config/2.json",
+  "productName": "CableOptimizer",
+  "version": "1.0.0",
+  "identifier": "com.cable.optimizer",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://localhost:3000",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Minimum Bounding Circle Visual Solver",
+        "width": 1280,
+        "height": 800,
+        "resizable": true,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/icon.ico",
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns"
+    ]
+  }
+}
