@@ -1,7 +1,7 @@
 let currentResult = null;
 
 // Global Zoom & Pan & Drag State
-let currentZoom = { scale: 1, x: 0, y: 0 };
+let currentZoom = { scale: 0.8, x: 0, y: 0 };
 let isPanning = false;
 let panStart = { x: 0, y: 0 };
 
@@ -479,7 +479,7 @@ function toSVG(result) {
             </pattern>
           </defs>`;
 
-    s += `<g id="viewport" transform="translate(0, 0) scale(1)">`;
+    s += `<g id="viewport" transform="translate(0, 0) scale(0.8)">`;
     
     // 1. Background grid and center axes
     s += `<rect x="${(-Rb - pad)*5}" y="${(-Rb - pad)*5}" width="${W*5}" height="${W*5}" fill="url(#grid)" />`;
@@ -670,8 +670,9 @@ function setupInteractions() {
             const dy = e.clientY - panStart.y;
             const ctm = svg.getScreenCTM();
             if (ctm) {
-                currentZoom.x += dx / ctm.a;
-                currentZoom.y += dy / ctm.d;
+                const panDamping = 0.5; // Reduced panning amplitude for smoother control
+                currentZoom.x += (dx / ctm.a) * panDamping;
+                currentZoom.y += (dy / ctm.d) * panDamping;
             }
             panStart = { x: e.clientX, y: e.clientY };
             updateTransform();
@@ -723,7 +724,7 @@ function zoomOut() {
 }
 
 function resetZoom() {
-    currentZoom = { scale: 1, x: 0, y: 0 };
+    currentZoom = { scale: 0.8, x: 0, y: 0 };
     updateTransform();
 }
 
@@ -767,10 +768,6 @@ function updateStatisticsUI() {
                     <td style="text-align: center; font-weight: 700; color: #3042e3;">${Rb.toFixed(4)}</td>
                 </tr>
                 <tr>
-                    <td style="text-align: center; color: #073a40;">Packing Density (Area)</td>
-                    <td style="text-align: center; font-weight: 700; color: #3042e3;">${density}%</td>
-                </tr>
-                <tr>
                     <td style="text-align: center; color: #073a40;">Total Circles Count</td>
                     <td style="text-align: center; font-weight: 700; color: #3042e3;">${radii.length}</td>
                 </tr>
@@ -792,7 +789,7 @@ function setPreset(val) {
 function runCalculation() {
     const btn = document.getElementById('btn-calc');
     const loading = document.getElementById('loading');
-    const svgContainer = document.getElementById('output-svg');
+    const svgContainer = document.getElementById('svg-stage') || document.getElementById('output-svg');
     const actionBtns = document.getElementById('action-btns');
     const tableContainer = document.getElementById('table-container');
     const placeholder = document.getElementById('placeholder-text');
@@ -839,7 +836,7 @@ function runCalculation() {
             if (placeholder) placeholder.style.display = 'none';
             zoomControls.style.display = 'flex';
             if (hintBanner) {
-                hintBanner.style.display = 'block';
+                hintBanner.style.display = 'flex';
                 hintBanner.textContent = '💡 Drag any circle to adjust • Scroll to zoom • Drag background to pan';
             }
             

@@ -75,7 +75,7 @@ body {
   width: 38%;
   min-width: 340px;
   box-sizing: border-box;
-  margin-left: 12px;
+  margin-left: 0px;
 }
 
 .panel-preview {
@@ -228,13 +228,23 @@ select:focus {
 /* ===== Interactive SVG Container ===== */
 #output-svg {
   width: 100%;
-  height: 480px;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+#svg-stage {
+  flex: 1;
+  width: 100%;
+  min-height: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f8fafc;
-  border: 1px dashed #cbd5e1;
-  border-radius: 1px;
   position: relative;
   overflow: hidden;
 }
@@ -285,8 +295,8 @@ select:focus {
 .btn-zoom {
   padding: 6px 12px;
   font-size: 0.8rem;
-  background: #ffffff;
-  color: #475569;
+  background: #f0f6ff;
+  color: #2148bc;
   border: 1px solid #cbd5e1;
   border-radius: 6px;
   cursor: pointer;
@@ -301,17 +311,25 @@ select:focus {
 }
 
 .hint-banner {
-  position: absolute;
-  bottom: 16px;
-  left: 16px;
-  font-size: 0.78rem;
+  width: 100%;
+  margin-top: 0;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.95);
+  border-top: 1px solid #e2e8f0;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 0;
   color: #64748b;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 6px 12px;
-  border-radius: 6px;
-  border: 1px solid #e2e8f0;
-  pointer-events: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  z-index: 5;
+  box-shadow: none;
 }
 
 /* ===== Statistics & Coordinate Data Table ===== */

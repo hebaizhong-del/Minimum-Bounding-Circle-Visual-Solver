@@ -28,6 +28,7 @@ Packing circles of equal or varying radii inside the smallest possible enclosing
   - `3 Large + 5 Small` (`10, 10, 10, 4, 4, 4, 4, 4`)
   - `7 Equal Circles` (`10, 10, 10, 10, 10, 10, 10`)
   - `8 Decreasing` (`12, 10, 8, 6, 5, 4, 3, 2`)
+  - `12 Unequal` (`12, 10, 8, 6, 5, 4, 3, 2, 10, 8, 6, 2`)
   - `32 Unequal` (Complex multi-tier mixed-diameter layout)
 - **Mathematical Optimization Engine**:
   - **L-BFGS (Limited-memory Broyden–Fletcher–Goldfarb–Shanno)** numerical solver for smooth constraint relaxation.
