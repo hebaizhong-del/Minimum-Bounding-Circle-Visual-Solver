@@ -1,5 +1,7 @@
 # Minimum Bounding Circle Visual Solver (CableOptimizer)
 
+[English](README.md) | [简体中文](README_zh.md)
+
 [![Live Web App](https://img.shields.io/badge/Live_Web_App-remix--studio-4285F4?logo=google-cloud&logoColor=white)](https://remix-studio-8856-789804289393.us-west1.run.app)
 [![GitHub Release](https://img.shields.io/github/v/release/hebaizhong-del/Minimum-Bounding-Circle-Visual-Solver?color=success&logo=github&label=Release)](https://github.com/hebaizhong-del/Minimum-Bounding-Circle-Visual-Solver/releases)
 [![Download Windows App](https://img.shields.io/badge/Download-Windows_.exe-0078D6?logo=windows&logoColor=white)](https://github.com/hebaizhong-del/Minimum-Bounding-Circle-Visual-Solver/releases/latest)
