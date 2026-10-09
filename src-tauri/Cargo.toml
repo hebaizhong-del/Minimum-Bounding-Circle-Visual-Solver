@@ -4,6 +4,7 @@ version = "1.0.0"
 description = "Minimum Bounding Circle Visual Solver"
 authors = ["AI Studio"]
 edition = "2021"
+license = "Apache-2.0"
 
 [lib]
 name = "cable_optimizer"
