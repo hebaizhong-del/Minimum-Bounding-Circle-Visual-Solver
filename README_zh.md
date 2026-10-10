@@ -26,6 +26,8 @@
 
 **CableOptimizer** 是一款交互式、高性能的**最小包络圆（Minimum Bounding / Enclosing Circle）排布求解与可视化系统**。专注于线缆线芯排布优化、圆柱形容器装载、横截面几何分析以及非线性圆排样优化设计。
 
+![CableOptimizer 界面截图与可视化效果](./17906578651638.png)
+
 ---
 
 ## 📌 项目概述

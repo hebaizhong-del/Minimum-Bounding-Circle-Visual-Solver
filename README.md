@@ -26,6 +26,8 @@
 
 An interactive, high-performance visual optimizer and solver for the **Minimum Bounding / Enclosing Circle Packing Problem**. Designed for cable core layout design, cylindrical container packing, cross-sectional geometry analysis, and geometric optimization.
 
+![CableOptimizer Visual Solver UI Screenshot](./17906578651638.png)
+
 ---
 
 ## 📌 Overview
